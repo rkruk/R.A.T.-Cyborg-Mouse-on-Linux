@@ -9,11 +9,13 @@ Those settings has been tested on Funtoo/Gentoo and Arch Linux machines with the
 ================================================================
 
 Testing machines:
-
+-Gentoo with current profile (~amd64)
+-Funtoo with current profile (~amd64)
+-Arch 64bit
 -Kernel-
 
 Kernel line is: 
-Linux 3.6>
+Linux from 3.6>
 
 -Evdev-
 
@@ -21,7 +23,7 @@ to do
 
 -Xorg-
 
-to do
+to do: details about current main software dependecies in th system "world" profile
 
 ===============================================================
 
@@ -51,6 +53,9 @@ MOUSE TECHNICAL DETAILS:
 
 All settings are fully customizable and transferable between different mouse models
 
--It is only amount of buttons to setup correctly.
+(I believe that problem with setting up pro-mouse in the linux environment is wider then 
+MadCatz R.A.T.s) and these settings could be used with other mice models/vendors.
+
+-It is only amount of buttons to setup correctly with other models.
 
 ==============================================================
