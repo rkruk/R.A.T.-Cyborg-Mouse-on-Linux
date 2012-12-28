@@ -9,6 +9,7 @@ Those settings has been tested on Funtoo/Gentoo and Arch Linux machines with the
 ================================================================
 
 Testing machines:
+
 Gentoo profile ~ current
 Funtoo profile ~ current
 
