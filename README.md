@@ -9,9 +9,16 @@ Those settings has been tested on Funtoo/Gentoo and Arch Linux machines with the
 ================================================================
 
 Testing machines:
+<<<<<<< HEAD
 -Gentoo with current profile (~amd64)
 -Funtoo with current profile (~amd64)
 -Arch 64bit
+=======
+
+Gentoo profile ~ current
+Funtoo profile ~ current
+
+>>>>>>> 1f8450cf6565c9ba2daa98ad922899212d265d9a
 -Kernel-
 
 Kernel line is: 
