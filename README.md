@@ -31,6 +31,7 @@ You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..);
 
 -this mouse settings are working with all current linux kernels and mods;
 
+==============================================================
 MOUSE TECHNICAL DETAILS:
 
 -Mouse with Very Low Latency 2.4Ghz Wireless or with cable (v.3 and v.7);
