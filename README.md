@@ -12,7 +12,7 @@ Testing machines:
 
 -Gentoo with current profile (~amd64)
 -Funtoo with current profile (~amd64)
--Arch 64bit
+-Arch Linux (64bit)
 =======
 
 Gentoo profile ~ current
@@ -33,7 +33,7 @@ to do: details about current main software dependecies in th system "world" prof
 
 ===============================================================
 
-You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..);
+You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) it doesn't really matters;
 
 -this mouse settings are working with all current linux kernels and mods;
 
@@ -60,9 +60,9 @@ MOUSE TECHNICAL DETAILS:
 
 All settings are fully customizable and transferable between different mouse models
 
-(I believe that problem with setting up pro-mouse in the linux environment is wider then 
-MadCatz R.A.T.s) and these settings could be used with other mice models/vendors.
+(I believe that problem with 'setting up' pro-mouse (I mean mouse with more then 2 or 3 buttons) in the linux graphical environment is wider then 
+MadCatz R.A.T.s mouses) and these settings could be used also with other mice models/vendors.
 
--It is only amount of buttons to setup correctly with other models.
+-It is only amount of buttons to setup correctly to work with other mouse models/vendors.
 
 ==============================================================
