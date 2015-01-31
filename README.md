@@ -2,11 +2,10 @@
 
 
 
-================================================================
 
 Those settings has been tested on Funtoo/Gentoo and Arch Linux machines with the latest Xorg & also with the latest kernel 3.6 >
 
-================================================================
+====================================================================
 
 Testing machines:
 
@@ -14,7 +13,8 @@ Testing machines:
 -Funtoo with current profile (~amd64)
 -Arch (64bit)
 
-================================================================
+====================================================================
+
 **TECH STUFF:**
 
 Gentoo profile ~ current
@@ -23,11 +23,12 @@ Funtoo standard profile
 Kernel line is: 
 Linux from 3.6> to current
 
-===============================================================
+====================================================================
 
 This mouse settings are working with all current linux kernels and mods. You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) it should works.
 
-==============================================================
+====================================================================
+
 **MOUSE TECHNICAL DETAILS:**
 
 -Mouse with Very Low Latency 2.4Ghz Wireless or with cable (v.3 and v.7);
