@@ -1,6 +1,6 @@
-================================================================
+**Linux Xorg/evdev setups for multi buttons devices like "CYBORG R.A.T." mouse (16 actions for all buttons).**
 
-Linux Xorg/evdev setups for multi buttons devices like "CYBORG R.A.T." mouse (16 actions for all buttons).
+
 
 ================================================================
 
@@ -12,33 +12,23 @@ Testing machines:
 
 -Gentoo with current profile (~amd64)
 -Funtoo with current profile (~amd64)
--Arch Linux (64bit)
-=======
+-Arch (64bit)
+
+================================================================
+**TECH STUFF:**
 
 Gentoo profile ~ current
-Funtoo profile ~ current
-
--Kernel-
+Funtoo standard profile
 
 Kernel line is: 
-Linux from 3.6>
-
--Evdev-
-
-to do
-
--Xorg-
-
-to do: details about current main software dependecies in th system "world" profile
+Linux from 3.6> to current
 
 ===============================================================
 
-You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) it doesn't really matters;
-
--this mouse settings are working with all current linux kernels and mods;
+This mouse settings are working with all current linux kernels and mods. You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) it should works.
 
 ==============================================================
-MOUSE TECHNICAL DETAILS:
+**MOUSE TECHNICAL DETAILS:**
 
 -Mouse with Very Low Latency 2.4Ghz Wireless or with cable (v.3 and v.7);
 
