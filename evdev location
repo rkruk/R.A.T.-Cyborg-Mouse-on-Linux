@@ -1,0 +1,10 @@
+File location:
+
+It could be:
+/etc/X11/xorg.conf.d/evdev.conf 
+or even: 
+/etc/X11/xorg.conf.d/10-evdev.conf 
+
+It can be inserted inside xorg.conf (/etc/X11/xorg.conf) - but there is 
+a risk involved: overwriting of that file during next 
+update/upgrade of xorg.
