@@ -1,18 +1,21 @@
-**Linux Xorg/evdev setups for multi buttons devices like "CYBORG R.A.T." mouse (16 actions for all buttons).**
+***
 
+Linux Xorg/evdev setups for multi buttons devices like "CYBORG R.A.T." mouse (16 actions for all buttons).
+------------------------------------------------------------------------
 
+----------
 
 
 Those settings has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg. This workaround works with kernel 2.6 and with the latest kernel 3.. & 4.. > current. (nothing has changed - evdev still can't work with this class of devices *and it is May 2015.. :/ ).
 
 ====================================================================
 
-Testing machines:
+**Testing machines:**
 
--Gentoo with current profile (~amd64)
--Funtoo with current profile (~amd64)
--Arch (64bit)
--Ubuntu (tested from 14.04 to 15.04 (and 15.10 too)
+-Gentoo with current profile (~amd64);
+-Funtoo with current profile (~amd64);
+-Arch (64bit);
+-Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).
 
 ====================================================================
 
@@ -22,11 +25,11 @@ Gentoo profile ~ current
 Funtoo standard profile
 
 Kernel line is: 
-Linux from 2.6 all versions > to current (nobody care about older stuff - right?)
+*Linux from 2.6 all versions > to current* (nobody care about older stuff - right?)
 
 ====================================================================
 
-This mouse settings are working with all current linux kernels and mods. You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) it should works.
+Mouse settings are working with all current kernel versions and mods ( tested with: pf, ck). You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) -in most cases it should just works.
 
 ====================================================================
 
@@ -50,11 +53,11 @@ This mouse settings are working with all current linux kernels and mods. You can
 
 ==============================================================
 
-All settings are fully customizable and transferable between different mouse models
+All settings are fully customizable and transferable between different mouse models (non MadCatz too - probably).
 
-(I believe that problem with 'setting up' pro-mouses (pro - I mean mouse with more then 2 or 3 buttons) in the linux environment is wider than 
-MadCatz R.A.T.s mouses) and these settings could be also be used with other mice makers/models/vendors.
+(I believe that the problem with 'setting up' pro-mouses (pro - I mean mouse with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T.s mouses) and these settings could be be used with other mice makers/models/vendors.
 
+Set up:
 -It is only amount of buttons to setup correctly to work with other mouse makers/models/vendors.
 
 ==============================================================
