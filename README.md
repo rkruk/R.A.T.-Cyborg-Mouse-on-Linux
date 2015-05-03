@@ -58,6 +58,6 @@ All settings are fully customizable and transferable between different mouse mod
 (I believe that the problem with 'setting up' pro-mouses (pro - I mean mouse with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T.s mouses) and these settings could be be used with other mice makers/models/vendors.
 
 Set up:
--It is only amount of buttons to setup correctly to work with other mouse makers/models/vendors.
+It is only the correct number of buttons to setup correctly - to work with other mouse makers/models/vendors.
 
 ==============================================================
