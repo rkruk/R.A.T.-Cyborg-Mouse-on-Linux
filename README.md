@@ -7,23 +7,26 @@
 **Problem:**
 
 After being plugged, the mouse seems to work, but with some issues :
+
 -Unable to click button;
+
 -Unable to drag open windows (apps) or move between them;
--Mouse - in general is unresponsive.
+
+-Mouse in general is unresponsive and dificult to work with.
 
 **Reason:** 
 
-The problems are caused by an interaction between R.A.T Mode button (the profile changer) and the Xorg server. 
+The problems are caused by an interaction between R.A.T 'Mode button' (the profile changer) and the Xorg server. 
 
 **Workaround:** 
 
-The Profile Changer button must be disabled in Xorg. In the terminal as a root modify xorg.conf or create separate file evdev.conf (check 'evdev location' example).
+The 'Profile Changer' button must be disabled in Xorg. 
+
+In the terminal as a root create separate file `10-evdev.conf` (check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details).
 
 **Tested on:**
 
-Those settings has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg. This workaround works with kernel line from 2.6 to the latest kernel 3.. & 4.. > current. 
-
-(nothing has changed - evdev still can't work with this class of devices - and it is May 2015.. :/ ).
+This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg server. Workaround works with kernel line from 2.6 up to the current (besides this is not kernel issue - so it is a kernel agnostic setup). 
 
 * Gentoo testing profile (~ current);
 
@@ -33,13 +36,15 @@ Those settings has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines w
 
 * Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).
 
-Kernel versions: 
+Xorg & evdev versions: 
 
-From 2.6 -> all versions -> to current
+All versions -> to current.
 
 ====================================================================
 
-These settings are compatible with all kernel versions and mods ( tested with: pf, ck on Arch Linux). You can use this setup for any Linux Distribution - and in most cases it should just works as it is kernel & distro agnostic setup.
+These settings are compatible with all kernel versions and mods ( tested with: pf, ck on Arch Linux). 
+
+You can use this setup for any Linux Distribution - and in most cases it should just works as it is either xorg, kernel & distro agnostic setup.
 
 ====================================================================
 
@@ -63,10 +68,101 @@ These settings are compatible with all kernel versions and mods ( tested with: p
 
 ==============================================================
 
-All settings are fully customizable and transferable between different mouse models (non MadCatz (Saitek) too - probably?).
+All settings are fully customizable and transferable between different mouse models (non MadCatz (Saitek) too).
 
-I believe that the problem with 'setting up' multi button mouses ( I mean mouses with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T.) and this instruction could be be used with other mice makers/models/vendors.
+I believe that the problem with 'setting up' multi button mouses (I mean mouses with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T. series) and this instruction could be be used with other mice makers/models/vendors.
 
 ==============================================================
 
+**SETUP:**
 
+Before we can program the mouse buttons, we need to know each button’s number. Each mouse button is identified by a ID number. Use the `xinput` command in the terminal:
+
+`xinput list`
+
+This should produce output similar to the following:
+
+ ```Virtual core pointer                          id=2    [master pointer  (3)]```
+ 
+```   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]```
+
+```   ↳ Saitek Cyborg R.A.T.9 Wireless Mouse      id=10   [slave  pointer  (2)]```
+
+And look for the line containing the Cyborg R.A.T.9 Wireless Mouse and note its id to the right of the string. In this case: id=10. We need this id number for the next step.
+
+Now, run `xinput` command using this id:
+
+`xinput --test 10`
+
+The terminal waits for you to press mouse buttons and move the mouse around. Each button press generates text reading something like: “button press 10″ and “button release 10.” The number you see in the output is the number of the button. Test all mouse buttons and  write those numbers.
+
+Example:
+
+left button: 1
+
+right right: 3
+
+vertical wheel press down: 2
+
+vertical wheel up: 4
+
+vertical wheel down: 5
+
+left site back button: 8
+
+left side forward button: 9
+
+left side 'sniper' red button: 12
+
+horizontal wheel left: 11
+
+horizontal wheel right: 10
+
+'mode buttons': 11, 12, 13 
+
+
+==============================================================
+
+Now we need to specify a button map for Xorg.
+
+Edit `/etc/X11/xorg.conf.d/10-evdev.conf`:
+
+Add all 'mouse buttons' numbers from the previous test and disable the 'mode buttons'. First line is the maximum number you've got from the test:
+
+`Option "Buttons" "17" `
+
+`Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17" `
+
+In this example I've had no 6 and 7.
+
+11, 12, 13 'mode buttons' has been disabled.
+
+==============================================================
+
+Write all changes to `/etc/X11/xorg.conf.d/10-evdev.conf`:
+
+Example:
+
+`Section "InputClass"`
+
+`        Identifier "Mouse Remap"`
+
+`        MatchProduct "Saitek Cyborg R.A.T.9 Wireless Mouse"`
+
+`        MatchVendor "Saitek|SAITEK"`
+
+`        MatchIsPointer "on"`
+
+`        MatchDevicePath "/dev/input/event*"`
+
+`        Option "Protocol" "auto"`
+
+`        Option "Buttons" "17"`
+
+`        Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17"`
+
+`        Option "ZaxisMapping" "4 5 6 7"`
+
+`        Option "AutoReleaseButtons" "13 14 15"`
+
+`EndSection`
