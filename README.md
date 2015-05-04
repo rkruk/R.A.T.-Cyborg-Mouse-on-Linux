@@ -4,24 +4,24 @@ Linux Xorg/evdev setups for multi buttons devices like "CYBORG R.A.T." mouse (16
 ------------------------------------------------------------------------
 
 ----------
-Problem:
+**Problem:**
+
 After being plugged, the mouse seems to work, but with some issues :
 -Unable to click button;
 -Unable to drag open windows (apps) or move between them;
 -Mouse - in general is unresponsive.
 
-Reason:
+**Reason:** 
+
 The problems are caused by an interaction between R.A.T Mode button (the profile changer) and the Xorg server. 
 
-Workaround:
+**Workaround:** 
+
 The Profile Changer button must be disabled in Xorg. In the terminal as a root modify xorg.conf or create separate file evdev.conf (check 'evdev location' example).
 
+**Tested on:**
 
 Those settings has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg. This workaround works with kernel 2.6 and with the latest kernel 3.. & 4.. > current. (nothing has changed - evdev still can't work with this class of devices *and it is May 2015.. :/ ).
-
-====================================================================
-
-**Testing machines:**
 
 -Gentoo with current profile (~amd64);
 -Funtoo with current profile (~amd64);
