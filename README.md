@@ -32,15 +32,16 @@ Those settings has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines w
 
 **TECH STUFF:**
 
-Gentoo profile ~ current
-Funtoo standard profile
+Gentoo: profile ~ current
+
+Funtoo: standard profile
 
 Kernel line is: 
 *Linux from 2.6 all versions > to current* (nobody care about older stuff - right?)
 
 ====================================================================
 
-Mouse settings are working with all current kernel versions and mods ( tested with: pf, ck). You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) -in most cases it should just works.
+Those settings are working with all current kernel versions and mods ( tested with: pf, ck). You can use this setups for any kernel mod (pf-kernel, ck-kernel, etc..) - and in most cases it should just works as it is kernel agnostic setup.
 
 ====================================================================
 
