@@ -8,9 +8,13 @@ These files are parsed by the Xorg upon startup and are treated like part of the
 configuration file. Xorg server essentially treats the collection of all configuration files as one big file.
 
 It could be:
+
 /etc/X11/xorg.conf.d/10-evdev.conf 
+
 or:
+
 /etc/X11/xorg.conf.d/20-evdev.conf
+
 etc..
 
 It can be even inserted inside xorg.conf as a "Input Class" section (/etc/X11/xorg.conf) - but there is 
