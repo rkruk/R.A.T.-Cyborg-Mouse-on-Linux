@@ -143,26 +143,26 @@ Write all changes to `/etc/X11/xorg.conf.d/10-evdev.conf`:
 
 Example:
 
-`Section "InputClass"`
+<em><dd>```Section "InputClass"```
 
-`        Identifier "Mouse Remap"`
+```        Identifier "Mouse Remap"```
 
-`        MatchProduct "Saitek Cyborg R.A.T.9 Wireless Mouse"`
+```        MatchProduct "Saitek Cyborg R.A.T.9 Wireless Mouse"```
 
-`        MatchVendor "Saitek|SAITEK"`
+```        MatchVendor "Saitek|SAITEK"```
 
-`        MatchIsPointer "on"`
+```        MatchIsPointer "on"```
 
-`        MatchDevicePath "/dev/input/event*"`
+```        MatchDevicePath "/dev/input/event*"```
 
-`        Option "Protocol" "auto"`
+```        Option "Protocol" "auto"```
 
-`        Option "Buttons" "17"`
+```        Option "Buttons" "17"```
 
-`        Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17"`
+```        Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17"```
 
-`        Option "ZaxisMapping" "4 5 6 7"`
+```        Option "ZaxisMapping" "4 5 6 7"```
 
-`        Option "AutoReleaseButtons" "13 14 15"`
+```        Option "AutoReleaseButtons" "13 14 15"```
 
-`EndSection`
+```EndSection``` </dd></em>
