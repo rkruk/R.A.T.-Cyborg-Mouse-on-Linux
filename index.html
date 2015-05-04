@@ -1,71 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Cyborg-mouse linux set ups by lostin8</title>
+    <meta charset="UTF-8">
+    <title>R.A.T.9 Mouse -Linux Configuration by lostin8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/lostin8/cyborg-mouse">View on GitHub</a>
-    <div class="shell">
+    <section class="page-header">
+      <h1 class="project-name">R.A.T.9 Mouse -Linux Configuration</h1>
+      <h2 class="project-tagline">Xorg, evdev, set up, multi buttons, CYBORG R.A.T.9 mouse, linux</h2>
+      <a href="https://github.com/lostin8/cyborg-mouse" class="btn">View on GitHub</a>
+      <a href="https://github.com/lostin8/cyborg-mouse/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/lostin8/cyborg-mouse/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Cyborg-mouse linux set ups</h1>
-            <h2>Xorg, evdev, set up, multi buttons, CYBORG R.A.T.9 mouse, linux</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-rat9-mouse-xorg-server--evdev-configuration-for-linux" class="anchor" href="#welcome-to-rat9-mouse-xorg-server--evdev-configuration-for-linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to '<a href="http://www.cyborggaming.com/prod/rat9.htm">R.A.T.9</a> Mouse' Xorg server &amp; evdev configuration for Linux.</h3>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/lostin8/cyborg-mouse/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/lostin8/cyborg-mouse/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>Welcome to 'R.A.T. <a href="http://www.cyborggaming.com/prod/rat3.htm">R.A.T.3</a>,<a href="http://www.cyborggaming.com/prod/rat5.htm">R.A.T.5</a>,<a href="http://www.cyborggaming.com/prod/rat7.htm">R.A.T.7</a>,<a href="http://www.cyborggaming.com/prod/rat9.htm">R.A.T.9</a> Mouse' evdev setups for Linux.</h3>
-
-<h3>About</h3>
+<h3>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h3>
 
 <p>Due to terrible lack of support from evdev/Xorg in Linux for R.A.T. Mouses I decided to write my own evdev settings &amp; configs for it. Actually there is a few well known problems with this mouse series, starting from: most keys is not binded at all; 'panoramic wheel' is not working; battery is working shorter then in Windows/Mac; program buttons are a terrible issue, aiming button is only for decoration, etc..
 If you have mouse from this series and you can support me and test those settings I'll be very happy to know any of your thoughts, proposals about it.</p>
 
-<h3>Author</h3>
+<h3>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h3>
 
 <p><a href="https://github.com/lostin8">@lostin8</a> aka <a href="http://kruk.co">Rafal Kruk</a> is responsible for all the chaos here. </p>
 
-<h3>Support or Contact</h3>
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with this page? Please check out the documentation at <a href="https://github.com/lostin8/docs">https://github.com/lostin8/docs</a> or contact <a href="mailto:rafal@kruk.co">rafal@kruk.co</a> and I’ll help you sort it out.</p>
 
-<h3>Final Note</h3>
+<h3>
+<a id="final-note" class="anchor" href="#final-note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Final Note</h3>
 
 <p>Everything here is published on Creative Commons license. But please, please, please if you use my work, fork it, publish it somewhere else, or do whatever you want to do with it- do not forget to mention who wrote it, code it ,test it, document it ,etc. I spend a countless hours of work and tests just to publish it here- and I'm asking only for that simple favor.</p>
 
-<h3>Info for Cyborg R.A.T. settings and docs:</h3>
+<h3>
+<a id="info-for-cyborg-rat-settings-and-docs" class="anchor" href="#info-for-cyborg-rat-settings-and-docs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Info for Cyborg R.A.T. settings and docs:</h3>
 
 <p>Author of this page is not connected in any way with MadCatz Company. Please DO NOT post, send, email me any bugs, problems not related with code published on this website, I cannot take any responsibility for any hardware related issues. You can use all setting, code published here on your own responsibility.</p>
 
@@ -73,24 +52,17 @@ If you have mouse from this series and you can support me and test those setting
 
 <p>lostin8</p>
 
-<p><br>Code by <a href="https://github.com/lostin8" rel="cc:attributionURL">Rafal Kruk</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br>Based on a work at <a href="https://github.com/lostin8" rel="dct:source"></a><a href="https://github.com/lostin8">https://github.com/lostin8</a>.<br>Permissions beyond the scope of this license may be available at <a href="kruk.co" rel="cc:morePermissions">kruk.co</a>.</p>
-      </section>
+<p><br>Code by <a href="https://github.com/lostin8">Rafal Kruk</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br>Based on a work at <a href="https://github.com/lostin8"></a><a href="https://github.com/lostin8">https://github.com/lostin8</a>.<br>Permissions beyond the scope of this license may be available at <a href="kruk.co">kruk.co</a>.</p>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/lostin8">lostin8</a> can be found on <a href="https://github.com/lostin8/cyborg-mouse">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/lostin8/cyborg-mouse">R.A.T.9 Mouse -Linux Configuration</a> is maintained by <a href="https://github.com/lostin8">lostin8</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
 
-    </div>
+    </section>
 
-              <script type="text/javascript">
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -103,3 +75,4 @@ If you have mouse from this series and you can support me and test those setting
 
   </body>
 </html>
+
