@@ -65,6 +65,6 @@ These settings are compatible with all kernel versions and mods ( tested with: p
 
 All settings are fully customizable and transferable between different mouse models (non MadCatz (Saitek) too - probably?).
 
-(I believe that the problem with 'setting up' pro-mouses (pro - I mean mouse with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T.s mouses) and this instruction could be be used with other mice makers/models/vendors.
+I believe that the problem with 'setting up' multi button mouses ( I mean mouses with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T.) and this instruction could be be used with other mice makers/models/vendors.
 
 ==============================================================
