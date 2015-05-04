@@ -21,22 +21,25 @@ The Profile Changer button must be disabled in Xorg. In the terminal as a root m
 
 **Tested on:**
 
-Those settings has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg. This workaround works with kernel 2.6 and with the latest kernel 3.. & 4.. > current. (nothing has changed - evdev still can't work with this class of devices *and it is May 2015.. :/ ).
+Those settings has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg. This workaround works with kernel line from 2.6 to the latest kernel 3.. & 4.. > current. 
 
--Gentoo testing profile (~ current);
+(nothing has changed - evdev still can't work with this class of devices - and it is May 2015.. :/ ).
 
--Funtoo - current profile (~ standard);
+* Gentoo testing profile (~ current);
 
--Arch (current);
+* Funtoo - current profile (~ standard);
 
--Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).
+* Arch (current);
+
+* Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).
 
 Kernel versions: 
-*Linux from 2.6 all versions > to *current
+
+From 2.6 -> all versions -> to current
 
 ====================================================================
 
-*- Those settings are working with all kernel versions and mods ( tested with: pf, ck on Arch Linux). You can use this setup for any Linux Distribution - and in most cases it should just works as it is kernel, distro agnostic setup.
+These settings are compatible with all kernel versions and mods ( tested with: pf, ck on Arch Linux). You can use this setup for any Linux Distribution - and in most cases it should just works as it is kernel, distro agnostic setup.
 
 ====================================================================
 
@@ -48,15 +51,15 @@ Kernel versions:
 
 -Buttons:
 
--2 regular left and right mouse buttons
+* 2 regular left and right mouse buttons
 
--4 Custom DPI Settings
+* 4 Custom DPI Settings
 
--6 Programmable Buttons
+* 6 Programmable Buttons
 
--3 'Cyborg Modes'
+* 3 'Cyborg Modes'
 
--A total of: 8 buttons.
+* A total of: 8 buttons.
 
 ==============================================================
 
