@@ -1,6 +1,6 @@
 ***
 
-Linux Xorg server configuration & setup for multi buttons mouses like Mad Catz "CYBORG R.A.T."
+#### Linux Xorg server configuration & setup for multi buttons mouse Mad Catz "CYBORG R.A.T."
 ------------------------------------------------------------------------
 
 ----------
