@@ -1,6 +1,6 @@
 ***
 
-Linux Xorg/evdev setups for multi buttons devices like "CYBORG R.A.T." Mouse (16 actions for all buttons).
+Linux Xorg server configuration & setup for multi buttons mouses like Mad Catz "CYBORG R.A.T."
 ------------------------------------------------------------------------
 
 ----------
