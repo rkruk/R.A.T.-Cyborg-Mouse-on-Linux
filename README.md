@@ -39,7 +39,7 @@ From 2.6 -> all versions -> to current
 
 ====================================================================
 
-These settings are compatible with all kernel versions and mods ( tested with: pf, ck on Arch Linux). You can use this setup for any Linux Distribution - and in most cases it should just works as it is kernel, distro agnostic setup.
+These settings are compatible with all kernel versions and mods ( tested with: pf, ck on Arch Linux). You can use this setup for any Linux Distribution - and in most cases it should just works as it is kernel & distro agnostic setup.
 
 ====================================================================
 
@@ -47,11 +47,11 @@ These settings are compatible with all kernel versions and mods ( tested with: p
 
 -Mouse with Very Low Latency 2.4Ghz Wireless (v.9) or Cable Versions (v.3 and v.7);
 
--6400 DPI (track approx up to 6 meters per second);
+-DPI Range – 25-6400dpi (in 25dpi increments - track approx up to 6 meters per second);
 
 -Buttons:
 
-* 2 regular left and right mouse buttons
+* 2 regular: left and right mouse buttons
 
 * 4 Custom DPI Settings
 
@@ -68,3 +68,5 @@ All settings are fully customizable and transferable between different mouse mod
 I believe that the problem with 'setting up' multi button mouses ( I mean mouses with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T.) and this instruction could be be used with other mice makers/models/vendors.
 
 ==============================================================
+
+
