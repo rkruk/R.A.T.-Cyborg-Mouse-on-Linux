@@ -185,11 +185,24 @@ Fire up terminal:
 
 (In the shown menu the blue bar indicates the position of the cursor. With the ↑ and ↓ arrow keys change the position of the cursor. The ← and → arrow keys traverse the menu bar in the bottom and define what happens when the Enter key is pressed. For the menu bar below, Select switches to a sub menu for the menu entries ending with ---> while Exit exits a sub menu. As an alternative the Esc key can be pressed twice to exit the application).
 
-Inside menuconfig just do the drivers section --> input drivers:
+Inside menuconfig just go to the drivers section --> input drivers:
 
+Main Menu:
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/1.jpg)
+
+ ↳ Device Drivers Section:
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/2.jpg)
+
+ ↳ Input Devices --> Mice:
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/3.jpg)
+
+Change M for * (build in not as a module):
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/4.jpg)
+
+Exactly as shown here:
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/5.jpg)
+
+I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitek driver (not MadCatz), but I've read that it works in some cases somehow (-_-):
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
+
+After that exit Kernel Menu.
