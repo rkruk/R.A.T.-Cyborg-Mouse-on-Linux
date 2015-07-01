@@ -207,11 +207,11 @@ Exactly as shown here: <br>
 
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/5.jpg)
 
-I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitek driver (not MadCatz), but I've read that it works in some cases somehow (-_-): <br>
+I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitec driver (not MadCatz!) - I've read that in some cases it works somehow (-_-) (well it won't brake anything): <br>
 
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
 
-After that exit Kernel Menu.
+After that - exit Kernel Menu.
 
 Now we are ready to start the build. You can speed up the compilation process by enabling parallel make with the -j flag. The recommended use is ‘processor cores + 1′, e.g. 5 if you have a quad core processor:
 
@@ -221,7 +221,7 @@ Finally, install the kernel:
 
 ```sudo make install```
 
-And done - you should have MadCatz mouse drivers enabled. 
+And done - you should have MadCatz mouse drivers enabled without any xorg configuration files to worry about. 
 
 **FOR DETAILED & SPECIFIC TO YOUR LINUX DISTRIBUTION KERNEL COMPILATION - PLEASSE CHECK YOUR DISTRIBUTION MANUAL** 
 
