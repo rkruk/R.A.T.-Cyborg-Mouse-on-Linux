@@ -169,14 +169,19 @@ Example:
 
 ==============================================================
 **Better way of setting this up**
+
 Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills.
 
 **Mouse drivers inside kernel**
 
 Make sure you have all necessary tools (gcc, make, ctags, ncurses-devel) and kernel sources - or install them (howto depends on distribution). When you are ready: 
-- Fire up terminal:
-- ```cd /usr/src/linux```
-- ```make menuconfig```
+
+- Fire up terminal: 
+
+ ```cd /usr/src/linux```
+ 
+ ```make menuconfig```
+
 
 (In the shown menu the blue bar indicates the position of the cursor. With the ↑ and ↓ arrow keys change the position of the cursor. The ← and → arrow keys traverse the menu bar in the bottom and define what happens when the Enter key is pressed. For the menu bar below, Select switches to a sub menu for the menu entries ending with ---> while Exit exits a sub menu. As an alternative the Esc key can be pressed twice to exit the application).
 
