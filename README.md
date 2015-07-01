@@ -8,6 +8,7 @@
 ------------------------------------------------------------------------
 
 ----------
+<br>
 **Problem:**
 
 After being plugged, the mouse seems to work, but with issues :
@@ -18,16 +19,19 @@ After being plugged, the mouse seems to work, but with issues :
 
 -Mouse in general is unresponsive and dificult to work with.
 
+<br>
 **Reason:** 
 
 The problems are caused by an interaction between R.A.T 'Mode button' (the profile changer) and the Xorg server. 
 
+<br>
 **Workaround:** 
 
 The 'Profile Changer' button must be disabled in Xorg to make the mouse work. 
 
 In the terminal as a root create separate file `10-evdev.conf` (check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details). Why separate file and not make changes directly inside xorg.conf? Any potential update of X server will default xorg.conf file, and separate evdev.conf file will be untouched thus mouse will be operational.
 
+<br>
 **Tested on:**
 
 This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg server. Workaround works with kernel line from 2.6 up to the current (besides this is not kernel issue - so it is a kernel agnostic workaround). 
@@ -52,7 +56,8 @@ You can use this setup for any Linux Distribution - and in most cases it should 
 
 ====================================================================
 
-**MOUSE TECHNICAL DETAILS:**
+<br>
+<p align="center">**MOUSE TECHNICAL DETAILS:**
 
 -Mouse with Very Low Latency 2.4Ghz Wireless (v.9) or Cable Versions (v.3 and v.7);
 
@@ -78,7 +83,7 @@ I believe that the problem with 'setting up' multi button mouses (I mean mouses 
 
 ==============================================================
 
-**SETUP:**
+<p align="center">**SETUP:**
 
 Before we can program the mouse buttons, we need to know each button’s number. Each mouse button is identified by a ID number. Use the `xinput` command in the terminal:
 
@@ -172,11 +177,11 @@ Example:
 ```EndSection``` </dd></em>
 
 ==============================================================
-***Better way of setting this up***
+<p align="center">***Better way of setting this up***
 
 Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills.
 
-**Mouse drivers inside kernel**
+<p align="center">**Mouse drivers inside kernel**
 
 Make sure you have all necessary tools (gcc, make, ctags, ncurses-devel) and kernel sources - or install them (howto depends on distribution). When you are ready: 
 
