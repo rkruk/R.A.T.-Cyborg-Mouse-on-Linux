@@ -1,10 +1,10 @@
 ***
 
-#### CYBORG R.A.T. on Linux 
+#### <center>CYBORG R.A.T. on Linux 
 
 #### Xorg Server configuration & setup for multi buttons mouse 
 
-#### (made by Mad Catz / Saitek)
+#### (made by Mad Catz / Saitek)</center>
 ------------------------------------------------------------------------
 
 ----------
