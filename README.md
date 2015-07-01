@@ -223,6 +223,6 @@ Finally, install the kernel:
 
 And done - you should have MadCatz mouse drivers enabled without any xorg configuration files to worry about. 
 
-**FOR DETAILED & SPECIFIC TO YOUR LINUX DISTRIBUTION KERNEL COMPILATION - PLEASSE CHECK YOUR DISTRIBUTION MANUAL** 
+**FOR DETAILED & SPECIFIC TO YOUR LINUX DISTRIBUTION KERNEL COMPILATION PROCESS - PLEASE CHECK YOUR DISTRIBUTION MANUAL/DOCUMENTATION** 
 
 ```This is only 'general howto' where those drivers are inside the kernel, if you'll make your system unbootable due to misconfigured kernel setup/compilation do not blame me. If you don't know the dark side of kernel - don't go there Luke.```
