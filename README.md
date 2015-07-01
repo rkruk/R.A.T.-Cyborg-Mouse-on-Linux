@@ -1,14 +1,14 @@
 ***
 
-#### Linux Xorg server configuration & setup for multi buttons mouse Mad Catz "CYBORG R.A.T."
+#### CYBORG R.A.T. on Linux (Xorg server configuration & setup for multi buttons mouse made by Mad Catz / Saitek)
 ------------------------------------------------------------------------
 
 ----------
 **Problem:**
 
-After being plugged, the mouse seems to work, but with some issues :
+After being plugged, the mouse seems to work, but with issues :
 
--Unable to click button;
+-Unable to operate buttons (open/close windows, etc..);
 
 -Unable to drag open windows (apps) or move between them;
 
@@ -20,13 +20,13 @@ The problems are caused by an interaction between R.A.T 'Mode button' (the profi
 
 **Workaround:** 
 
-The 'Profile Changer' button must be disabled in Xorg. 
+The 'Profile Changer' button must be disabled in Xorg to make the mouse work. 
 
-In the terminal as a root create separate file `10-evdev.conf` (check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details).
+In the terminal as a root create separate file `10-evdev.conf` (check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details). Why separate file and not make changes directly inside xorg.conf? Any potential update of X server will default xorg.conf file, and separate evdev.conf file will be untouched thus mouse will be operational.
 
 **Tested on:**
 
-This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg server. Workaround works with kernel line from 2.6 up to the current (besides this is not kernel issue - so it is a kernel agnostic setup). 
+This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg server. Workaround works with kernel line from 2.6 up to the current (besides this is not kernel issue - so it is a kernel agnostic workaround). 
 
 * Gentoo testing profile (~ current);
 
@@ -42,9 +42,9 @@ All versions -> to current.
 
 ====================================================================
 
-These settings are compatible with all kernel versions and mods ( tested with: pf, ck on Arch Linux). 
+This workaround is compatible with all kernel versions and mods ( tested with: pf, ck on Arch Linux). 
 
-You can use this setup for any Linux Distribution - and in most cases it should just works as it is either xorg, kernel & distro agnostic setup.
+You can use this setup for any Linux Distribution - and in most cases it should just works fine as it is either xorg, kernel & distro agnostic setup.
 
 ====================================================================
 
@@ -68,9 +68,9 @@ You can use this setup for any Linux Distribution - and in most cases it should 
 
 ==============================================================
 
-All settings are fully customizable and transferable between different mouse models (non MadCatz (Saitek) too).
+All settings are fully customizable and transferable between different mouse models (MadCatz & Saitek).
 
-I believe that the problem with 'setting up' multi button mouses (I mean mouses with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T. series) and this instruction could be be used with other mice makers/models/vendors.
+I believe that the problem with 'setting up' multi button mouses (I mean mouses with more then 2 or 3 buttons) in the linux environment is wider than MadCatz R.A.T. series) and this instruction could be be helpfull as a reference with other mice makers/models/vendors.
 
 ==============================================================
 
@@ -166,3 +166,18 @@ Example:
 ```        Option "AutoReleaseButtons" "13 14 15"```
 
 ```EndSection``` </dd></em>
+
+==============================================================
+**Better way of setting this up**
+Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills.
+
+**Mouse drivers inside kernel**
+
+Make sure you have all necessary tools (gcc, make, ctags, ncurses-devel) and kernel sources - or install them (howto depends on distribution). When you are ready: 
+- Fire up terminal:
+- ```cd /usr/src/linux```
+- ```make menuconfig```
+
+(In the shown menu the blue bar indicates the position of the cursor. With the ↑ and ↓ arrow keys change the position of the cursor. The ← and → arrow keys traverse the menu bar in the bottom and define what happens when the Enter key is pressed. For the menu bar below, Select switches to a sub menu for the menu entries ending with ---> while Exit exits a sub menu. As an alternative the Esc key can be pressed twice to exit the application).
+
+
