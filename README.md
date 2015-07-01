@@ -1,5 +1,6 @@
 ***
-
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/rat.png)
+<br>
 #### <p align="center">CYBORG R.A.T. on Linux 
 
 #### <p align="center">Xorg Server configuration & setup for multi buttons mouse 
@@ -58,6 +59,7 @@ You can use this setup for any Linux Distribution - and in most cases it should 
 
 <br>
 <p align="center">**MOUSE TECHNICAL DETAILS:**
+<br>
 
 -Mouse with Very Low Latency 2.4Ghz Wireless (v.9) or Cable Versions (v.3 and v.7);
 
