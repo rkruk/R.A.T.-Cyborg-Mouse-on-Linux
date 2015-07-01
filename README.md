@@ -180,7 +180,7 @@ Fire up terminal:
 
  ```cd /usr/src/linux```
  
- ```make menuconfig```
+ ```sudo make menuconfig```
 
 
 (In the shown menu the blue bar indicates the position of the cursor. With the ↑ and ↓ arrow keys change the position of the cursor. The ← and → arrow keys traverse the menu bar in the bottom and define what happens when the Enter key is pressed. For the menu bar below, Select switches to a sub menu for the menu entries ending with ---> while Exit exits a sub menu. As an alternative the Esc key can be pressed twice to exit the application).
@@ -212,3 +212,17 @@ I'm not sure about that part - is it true or not. This is small change and only 
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
 
 After that exit Kernel Menu.
+
+Now we are ready to start the build. You can speed up the compilation process by enabling parallel make with the -j flag. The recommended use is ‘processor cores + 1′, e.g. 5 if you have a quad core processor:
+
+```sudo make -j5 && sudo make modules_install```
+
+Finally, install the kernel:
+
+```sudo make install```
+
+And done - you should have MadCatz mouse drivers enabled. 
+
+**FOR DETAILED & SPECIFIC TO YOUR LINUX DISTRIBUTION KERNEL COMPILATION - PLEASSE CHECK YOUR DISTRIBUTION MANUAL** 
+
+```This is only 'general howto' where those drivers are inside the kernel, if you'll make your system unbootable due to misconfigured kernel setup/compilation do not blame me. If you don't know the dark side of kernel - don't go there Luke.```
