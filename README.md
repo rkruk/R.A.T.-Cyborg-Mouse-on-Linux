@@ -168,7 +168,7 @@ Example:
 ```EndSection``` </dd></em>
 
 ==============================================================
-**Better way of setting this up**
+***Better way of setting this up***
 
 Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills.
 
@@ -176,7 +176,7 @@ Recently I've found that there is a better way to set R.A.T. mouse. It appears t
 
 Make sure you have all necessary tools (gcc, make, ctags, ncurses-devel) and kernel sources - or install them (howto depends on distribution). When you are ready: 
 
-- Fire up terminal: 
+Fire up terminal: 
 
  ```cd /usr/src/linux```
  
