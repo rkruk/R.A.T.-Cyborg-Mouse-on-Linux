@@ -188,21 +188,27 @@ Fire up terminal:
 Inside menuconfig just go to the drivers section --> input drivers:
 
 Main Menu:
+
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/1.jpg)
 
- ↳ Device Drivers Section:
+ ↳ Device Drivers Section: <br>
+ 
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/2.jpg)
 
  ↳ Input Devices --> Mice:
+ 
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/3.jpg)
 
 Change M for * (build in not as a module):
+
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/4.jpg)
 
-Exactly as shown here:
+Exactly as shown here: <br>
+
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/5.jpg)
 
-I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitek driver (not MadCatz), but I've read that it works in some cases somehow (-_-):
+I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitek driver (not MadCatz), but I've read that it works in some cases somehow (-_-): <br>
+
 ![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
 
 After that exit Kernel Menu.
