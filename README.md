@@ -199,28 +199,31 @@ Inside menuconfig just go to the drivers section --> input drivers:
 
 Main Menu:
 
-![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/1.jpg)
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/1.jpg)
+<br>
 
  ↳ Device Drivers Section: <br>
  
-![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/2.jpg)
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/2.jpg)
+<br>
 
  ↳ Input Devices --> Mice:
  
-![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/3.jpg)
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/3.jpg)
+<br>
 
 Change M for * (build in not as a module):
 
-![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/4.jpg)
-
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/4.jpg)
+<br>
 Exactly as shown here: <br>
 
-![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/5.jpg)
-
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/5.jpg)
+<br>
 I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitec driver (not MadCatz!) - I've read that in some cases it works somehow (-_-) (well it won't brake anything): <br>
 
-![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
-
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
+<br>
 After that - exit Kernel Menu.
 
 Now we are ready to start the build. You can speed up the compilation process by enabling parallel make with the -j flag. The recommended use is ‘processor cores + 1′, e.g. 5 if you have a quad core processor:
