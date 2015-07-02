@@ -88,7 +88,7 @@ I believe that the problem with 'setting up' multi button mouses (I mean mouses 
 
 Before we can program the mouse buttons, we need to know each button’s number. Each mouse button is identified by a ID number. Use the ```xinput``` command in the terminal: <br>
 
-```xinput list```
+```xinput list``` <br>
 <br>
 This should produce output similar to the following: <br>
 
@@ -103,7 +103,7 @@ And look for the line containing the Cyborg R.A.T.9 Wireless Mouse and note its 
 
 Now, run <p>```xinput```</p> command using this id: <br>
 
-```xinput --test 10```
+```xinput --test 10``` <br>
 <br>
 The terminal waits for you to press mouse buttons and move the mouse around. Each button press generates text reading something like: “button press 10″ and “button release 10.” The number you see in the output is the number of the button. Test all mouse buttons and  write those numbers.
 
@@ -119,7 +119,7 @@ Example:
 `left side 'sniper' red button: 12` <br>
 `horizontal wheel left: 11` <br>
 `horizontal wheel right: 10` <br>
-`'mode buttons': 11, 12, 13` <br> 
+`'mode buttons': 11, 12, 13`
 
 
 ==============================================================
@@ -135,7 +135,7 @@ Add all 'mouse buttons' numbers from the previous test and disable the 'mode but
 
 In this example there was no 6 and 7. <br>
 
-11, 12, 13 'mode buttons' has been disabled. <br>
+11, 12, 13 'mode buttons' has been disabled.
 
 ==============================================================
 
@@ -167,7 +167,9 @@ Make sure you have all necessary tools (gcc, make, ctags, ncurses-devel) and ker
 
 Fire up terminal: <br>
 
- ```cd /usr/src/linux```
+ ```cd /usr/src/linux``` <br>
+ 
+ and: <br>
  
  ```sudo make menuconfig```
 
