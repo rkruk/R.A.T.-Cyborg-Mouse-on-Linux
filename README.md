@@ -46,7 +46,7 @@ This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with 
 
 Xorg & evdev versions: 
 
-All versions -> to current.
+`All versions --> to current.`
 
 ====================================================================
 
@@ -60,21 +60,21 @@ You can use this setup for any Linux Distribution - and in most cases it should 
 <p align="center">**MOUSE TECHNICAL DETAILS:**
 <br>
 
--Mouse with Very Low Latency 2.4Ghz Wireless (v.9) or Cable Versions (v.3 and v.7);
+`-Mouse with Very Low Latency 2.4Ghz Wireless (v.9) or Cable Versions (v.3 and v.7);`
 
--DPI Range – 25-6400dpi (in 25dpi increments - track approx up to 6 meters per second);
+`-DPI Range – 25-6400dpi (in 25dpi increments - track approx up to 6 meters per second);`
 
--Buttons:
+`-Buttons:`
 
-* 2 regular: left and right mouse buttons
+`* 2 regular: left and right mouse buttons`
 
-* 4 Custom DPI Settings
+`* 4 Custom DPI Settings`
 
-* 6 Programmable Buttons
+`* 6 Programmable Buttons`
 
-* 3 'Cyborg Modes'
+`* 3 'Cyborg Modes' `
 
-* A total of: 8 buttons.
+`* A total of: 8 buttons.`
 
 ==============================================================
 
@@ -86,49 +86,40 @@ I believe that the problem with 'setting up' multi button mouses (I mean mouses 
 
 <p align="center">**SETUP:**
 
-Before we can program the mouse buttons, we need to know each button’s number. Each mouse button is identified by a ID number. Use the `xinput` command in the terminal:
+Before we can program the mouse buttons, we need to know each button’s number. Each mouse button is identified by a ID number. Use the ```xinput``` command in the terminal: <br>
 
-`xinput list`
-
-This should produce output similar to the following:
+```xinput list```
+<br>
+This should produce output similar to the following: <br>
 
  ```Virtual core pointer                          id=2    [master pointer  (3)]```
  
 ```   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]```
 
 ```   ↳ Saitek Cyborg R.A.T.9 Wireless Mouse      id=10   [slave  pointer  (2)]```
+<br>
 
-And look for the line containing the Cyborg R.A.T.9 Wireless Mouse and note its id to the right of the string. In this case: id=10. We need this id number for the next step.
+And look for the line containing the Cyborg R.A.T.9 Wireless Mouse and note its id to the right of the string. In this case: id=10. We need this id number for the next step. <br>
 
-Now, run `xinput` command using this id:
+Now, run <p>```xinput```</p> command using this id: <br>
 
-`xinput --test 10`
-
+```xinput --test 10```
+<br>
 The terminal waits for you to press mouse buttons and move the mouse around. Each button press generates text reading something like: “button press 10″ and “button release 10.” The number you see in the output is the number of the button. Test all mouse buttons and  write those numbers.
 
 Example:
 
-left button: 1
-
-right right: 3
-
-vertical wheel press down: 2
-
-vertical wheel up: 4
-
-vertical wheel down: 5
-
-left site back button: 8
-
-left side forward button: 9
-
-left side 'sniper' red button: 12
-
-horizontal wheel left: 11
-
-horizontal wheel right: 10
-
-'mode buttons': 11, 12, 13 
+`left button: 1` <br>
+`right right: 3` <br>
+`vertical wheel press down: 2` <br>
+`vertical wheel up: 4` <br>
+`vertical wheel down: 5` <br>
+`left site back button: 8` <br>
+`left side forward button: 9` <br>
+`left side 'sniper' red button: 12` <br>
+`horizontal wheel left: 11` <br>
+`horizontal wheel right: 10` <br>
+`'mode buttons': 11, 12, 13` <br> 
 
 
 ==============================================================
