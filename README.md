@@ -29,7 +29,7 @@ The problems are caused by an interaction between R.A.T 'Mode button' (the profi
 
 The 'Profile Changer' button must be disabled in Xorg to make the mouse work. 
 
-In the terminal as a root create separate file <p style='color:blue'>`10-evdev.conf`</p> (check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details). Why separate file and not make changes directly inside xorg.conf? Any potential update of X server will default xorg.conf file, and separate evdev.conf file will be untouched thus mouse will be operational.
+In the terminal got to: ```/etc/X11/xorg.conf.d``` and as a root create separate file <p>`10-evdev.conf`</p> ( ! check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details ! ). Why separate file and not make changes directly inside xorg.conf? Any potential update of X server will default xorg.conf file, and separate evdev.conf file will be untouched thus mouse will be operational.
 
 <br>
 **Tested on:**
