@@ -35,15 +35,15 @@ In the terminal got to: ```/etc/X11/xorg.conf.d``` and as a root create separate
 **Tested on:**
 
 This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg server. Workaround works with kernel line from 2.6 up to the current (besides this is not kernel issue - so it is a kernel agnostic workaround). 
-`
-* Gentoo testing profile (~ current);
 
-* Funtoo - current profile (~ standard);
+* `Gentoo testing profile (~ current);`
 
-* Arch (current);
+* `Funtoo - current profile (~ standard);`
 
-* Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).
-`
+* `Arch (current);`
+
+* `Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).`
+
 Xorg & evdev versions: 
 
 All versions -> to current.
