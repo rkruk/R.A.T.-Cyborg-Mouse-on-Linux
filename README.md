@@ -153,7 +153,7 @@ Example:
 ```EndSection``` <br>
 
 ==============================================================
-<p align="center"><b>BETTER WAY OF SETTING THIS UP</b><br>
+<h3 align="center"><b>BETTER WAY OF SETTING THIS UP:</b></h3> <br>
 
 Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills. <br>
 
