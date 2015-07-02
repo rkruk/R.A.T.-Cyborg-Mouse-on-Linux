@@ -200,28 +200,36 @@ Inside menuconfig just go to the drivers section --> input drivers:
 Main Menu:
 
 <p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/1.jpg)
-<br>
 
+<br>
+<br>
  ↳ Device Drivers Section: <br>
  
 <p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/2.jpg)
-<br>
 
+<br>
+<br>
  ↳ Input Devices --> Mice:
  
 <p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/3.jpg)
-<br>
 
+<br>
+<br>
 Change M for * (build in not as a module):
 
 <p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/4.jpg)
+
 <br>
-Exactly as shown here: <br>
+
+Exactly as shown here: 
+<br>
 
 <p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/5.jpg)
 <br>
-I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitec driver (not MadCatz!) - I've read that in some cases it works somehow (-_-) (well it won't brake anything): <br>
-
+<br>
+I'm not sure about that part - is it true or not. This is small change and only one driver more inside the kernel. I know that this is Logitec driver (not MadCatz!) - I've read that in some cases it works somehow (-_-) (well it won't brake anything):
+<br>
+<br>
 <p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
 <br>
 After that - exit Kernel Menu.
