@@ -9,23 +9,20 @@
 
 ----------
 <br>
-**Problem:**
+<p align="center">**Problem:**
 
 After being plugged, the mouse seems to work, but with issues :
 
--Unable to operate buttons (open/close windows, etc..);
-
--Unable to drag open windows (apps) or move between them;
-
--Mouse in general is unresponsive and dificult to work with.
-
+-Unable to operate buttons (open/close windows, etc..); <br>
+-Unable to drag open windows (apps) or move between them; <br>
+-Mouse in general is unresponsive and dificult to work with. <br>
 <br>
-**Reason:** 
+<p align="center">**Reason:** 
 
 The problems are caused by an interaction between R.A.T 'Mode button' (the profile changer) and the Xorg server. 
 
 <br>
-**Workaround:** 
+<p align="center">**Workaround:** 
 
 The 'Profile Changer' button must be disabled in Xorg to make the mouse work. 
 
