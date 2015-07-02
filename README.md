@@ -3,9 +3,8 @@
 <br>
 #### <p align="center">CYBORG R.A.T. on Linux 
 
-#### <p align="center">Xorg Server Configuration & Setup for multi buttons mouse 
+#### <p align="center">Xorg Server Configuration & Setup for R.A.T.9 
 
-#### <p align="center">R.A.T.9
 ------------------------------------------------------------------------
 
 ----------
