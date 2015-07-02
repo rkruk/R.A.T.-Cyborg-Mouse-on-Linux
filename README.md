@@ -231,6 +231,8 @@ I'm not sure about that part - is it true or not. This is small change and only 
 <br>
 <br>
 <p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/6.jpg)
+
+<br>
 <br>
 After that - exit Kernel Menu.
 
