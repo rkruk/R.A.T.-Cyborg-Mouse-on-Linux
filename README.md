@@ -1,5 +1,5 @@
 ***
-<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/rat.png)
+<p align="center">![alt tag](https://raw.githubusercontent.com/rkruk/cyborg-mouse/master/images/rat-logo.png)
 <br>
 #### <p align="center">CYBORG R.A.T. on Linux 
 
