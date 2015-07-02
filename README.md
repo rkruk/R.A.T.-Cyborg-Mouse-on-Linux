@@ -126,67 +126,55 @@ Example:
 
 Now we need to specify a button map for Xorg.
 
-Edit `/etc/X11/xorg.conf.d/10-evdev.conf`:
+Edit ```/etc/X11/xorg.conf.d/10-evdev.conf```:
 
 Add all 'mouse buttons' numbers from the previous test and disable the 'mode buttons'. First line is the maximum number you've got from the test:
 
-`Option "Buttons" "17" `
+`Option "Buttons" "17" ` <br>
+`Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17" ` <br>
 
-`Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17" `
+In this example there was no 6 and 7. <br>
 
-In this example I've had no 6 and 7.
-
-11, 12, 13 'mode buttons' has been disabled.
+11, 12, 13 'mode buttons' has been disabled. <br>
 
 ==============================================================
 
-Write all changes to `/etc/X11/xorg.conf.d/10-evdev.conf`:
+Write all changes to ```/etc/X11/xorg.conf.d/10-evdev.conf```: <br>
 
 Example:
 
-<em><dd>```Section "InputClass"```
-
-```        Identifier "Mouse Remap"```
-
-```        MatchProduct "Saitek Cyborg R.A.T.9 Wireless Mouse"```
-
-```        MatchVendor "Saitek|SAITEK"```
-
-```        MatchIsPointer "on"```
-
-```        MatchDevicePath "/dev/input/event*"```
-
-```        Option "Protocol" "auto"```
-
-```        Option "Buttons" "17"```
-
-```        Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17"```
-
-```        Option "ZaxisMapping" "4 5 6 7"```
-
-```        Option "AutoReleaseButtons" "13 14 15"```
-
-```EndSection``` </dd></em>
+```Section "InputClass"``` <br>
+```        Identifier "Mouse Remap"``` <br>
+```        MatchProduct "Saitek Cyborg R.A.T.9 Wireless Mouse"``` <br>
+```        MatchVendor "Saitek|SAITEK"``` <br>
+```        MatchIsPointer "on"``` <br>
+```        MatchDevicePath "/dev/input/event*"``` <br>
+```        Option "Protocol" "auto"``` <br>
+```        Option "Buttons" "17"``` <br>
+```        Option "ButtonMapping" "1 2 3 4 5 0 0 8 9 7 6 12 0 0 0 16 17"``` <br>
+```        Option "ZaxisMapping" "4 5 6 7"``` <br>
+```        Option "AutoReleaseButtons" "13 14 15"``` <br>
+```EndSection``` <br>
 
 ==============================================================
 <p align="center">***Better way of setting this up***
 
-Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills.
+Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills. <br>
 
 <p align="center">**Mouse drivers inside kernel**
 
-Make sure you have all necessary tools (gcc, make, ctags, ncurses-devel) and kernel sources - or install them (howto depends on distribution). When you are ready: 
+Make sure you have all necessary tools (gcc, make, ctags, ncurses-devel) and kernel sources - or install them (howto depends on distribution). When you are ready:  <br>
 
-Fire up terminal: 
+Fire up terminal: <br>
 
  ```cd /usr/src/linux```
  
  ```sudo make menuconfig```
 
+ <br>
+(In the shown menu the blue bar indicates the position of the cursor. With the ↑ and ↓ arrow keys change the position of the cursor. The ← and → arrow keys traverse the menu bar in the bottom and define what happens when the Enter key is pressed. For the menu bar below, Select switches to a sub menu for the menu entries ending with ---> while Exit exits a sub menu. As an alternative the Esc key can be pressed twice to exit the application). <br>
 
-(In the shown menu the blue bar indicates the position of the cursor. With the ↑ and ↓ arrow keys change the position of the cursor. The ← and → arrow keys traverse the menu bar in the bottom and define what happens when the Enter key is pressed. For the menu bar below, Select switches to a sub menu for the menu entries ending with ---> while Exit exits a sub menu. As an alternative the Esc key can be pressed twice to exit the application).
-
-Inside menuconfig just go to the drivers section --> input drivers:
+Inside menuconfig just go to the drivers section --> input drivers: <br>
 
 Main Menu:
 
@@ -225,18 +213,18 @@ I'm not sure about that part - is it true or not. This is small change and only 
 
 <br>
 <br>
-After that - exit Kernel Menu.
+After that - exit Kernel Menu. <br>
 
-Now we are ready to start the build. You can speed up the compilation process by enabling parallel make with the -j flag. The recommended use is ‘processor cores + 1′, e.g. 5 if you have a quad core processor:
+Now we are ready to start the build. You can speed up the compilation process by enabling parallel make with the -j flag. The recommended use is ‘processor cores + 1′, e.g. 5 if you have a quad core processor: <br>
 
-```sudo make -j5 && sudo make modules_install```
+```sudo make -j5 && sudo make modules_install```  <br>
 
-Finally, install the kernel:
+Finally, install the kernel: <br>
 
-```sudo make install```
+```sudo make install``` <br>
 
-And done - you should have MadCatz mouse drivers enabled without any xorg configuration files to worry about. 
+And done - you should have MadCatz mouse drivers enabled without any xorg configuration files to worry about.  <br>
 
-**FOR DETAILED & SPECIFIC TO YOUR LINUX DISTRIBUTION KERNEL COMPILATION PROCESS - PLEASE CHECK YOUR DISTRIBUTION MANUAL/DOCUMENTATION** 
+**FOR DETAILED & SPECIFIC TO YOUR LINUX DISTRIBUTION KERNEL COMPILATION PROCESS - PLEASE CHECK YOUR DISTRIBUTION MANUAL/DOCUMENTATION**  <br>
 
 ```This is only 'general howto' where those drivers are inside the kernel, if you'll make your system unbootable due to misconfigured kernel setup/compilation do not blame me. If you don't know the dark side of kernel - don't go there Luke.```
