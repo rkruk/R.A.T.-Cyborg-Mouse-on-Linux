@@ -11,27 +11,26 @@
 <br>
 <p align="center">**Problem:**
 
-After being plugged, the mouse seems to work, but with issues :
+<p align="center">After being plugged, the mouse seems to work, but with issues :
 
--Unable to operate buttons (open/close windows, etc..); <br>
--Unable to drag open windows (apps) or move between them; <br>
--Mouse in general is unresponsive and dificult to work with. <br>
+<p align="center"><i>-Unable to operate buttons (open/close windows, etc..);</i> <br>
+<p align="center"><i>-Unable to drag open windows (apps) or move between them;</i> <br>
+<p align="center"><i>-Mouse in general is unresponsive and dificult to work with.</i> <br>
 <br>
 <p align="center">**Reason:** 
 
-The problems are caused by an interaction between R.A.T 'Mode button' (the profile changer) and the Xorg server. 
+<p align="center">The problems are caused by an interaction between R.A.T 'Mode button' (the profile changer) and the Xorg server. 
 
 <br>
 <p align="center">**Workaround:** 
 
-The 'Profile Changer' button must be disabled in Xorg to make the mouse work. 
+<p align="center">The 'Profile Changer' button must be disabled in Xorg to make the mouse work. <br>
 
-In the terminal got to: ```/etc/X11/xorg.conf.d``` and as a root create separate file <p>`10-evdev.conf`</p> ( ! check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details ! ). <br> Why separate file and not make changes directly inside xorg.conf? <br> Any potential update of X server will default xorg.conf file, and separate evdev.conf file will be untouched thus mouse will be operational.
+In the terminal go to: ```/etc/X11/xorg.conf.d``` and as a root create separate file <p>`10-evdev.conf`</p> ( ! check 'evdev location' example for specific file location and `10-evdev.conf` file for all necessary details ! ). <br> Why separate file and not make changes directly inside xorg.conf? <br> Any potential update of X server will default xorg.conf file, and separate evdev.conf file will be untouched thus mouse will be operational. <br>
 
-<br>
-**Tested on:**
+<p align="center">**Tested on:**
 
-This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg server. Workaround works with kernel line from 2.6 up to the current (besides this is not kernel issue - so it is a kernel agnostic workaround). 
+<p align="center">This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with the latest Xorg server. Workaround works with kernel line from 2.6 up to the current (besides this is not kernel issue - so it is a kernel agnostic workaround). 
 
 * `Gentoo testing profile (~ current);`
 
@@ -39,9 +38,9 @@ This setup has been tested on Funtoo/Gentoo/Arch and Ubuntu Linux machines with 
 
 * `Arch (current);`
 
-* `Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).`
+* `Ubuntu (tested from 14.04 to 15.04 (and 15.10 too).` <br>
 
-Xorg & evdev versions: 
+Xorg/evdev version compatibility: 
 
 `All versions --> to current.`
 
@@ -154,7 +153,7 @@ Example:
 ```EndSection``` <br>
 
 ==============================================================
-<p align="center">***Better way of setting this up***
+<p align="center"><b>BETTER WAY OF SETTING THIS UP</b><br>
 
 Recently I've found that there is a better way to set R.A.T. mouse. It appears that linux kernel already have drivers specially developed for Madcatz/Saitek mouses. But they are not turn on by default - this require some kernel compilation basic skills. <br>
 
