@@ -13,12 +13,11 @@
 <br>
 <p align="center"><b>**Problem:**</b></p>
 
-<p align="center">After being plugged, the mouse seems to work, but with issues :</p><br><br>
+<p align="center">After being plugged, the mouse seems to work, but with issues :</p><br>
 
 <p align="center"><i>-Unable to operate buttons (open/close windows, etc..);</i></p><br>
 <p align="center"><i>-Unable to drag open windows (apps) or move between them;</i></p><br>
 <p align="center"><i>-Mouse in general is unresponsive and dificult to work with.</i></p><br>
-<br>
 <br>
 <p align="center"><b>**Reason:**</b></p> 
 <br>
